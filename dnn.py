@@ -79,12 +79,12 @@ while True:
 		except:
 			print(f'{CYAN}[{RED}=<{CYAN}] произошла ошибка')
 	elif shell == '2':
-		query = input(f'{CYAN}[{RED}*{CYAN}] IP: {GREEN}')
+		query = input(f'{CYAN}[{RED}0_0{CYAN}] IP: {GREEN}')
 		try:
 			r = requests.get(f'http://ip-api.com/json/{query}').json()
 			print(f'{CYAN}[{RED}*{CYAN}] Country:{GREEN} {r["country"]}\n{CYAN}[{RED}*{CYAN}] CountryCode:{GREEN} {r["countryCode"]}\n{CYAN}[{RED}*{CYAN}] Region:{GREEN} {r["region"]}\n{CYAN}[{RED}*{CYAN}] Region Name:{GREEN} {r["regionName"]}\n{CYAN}[{RED}*{CYAN}] City: {GREEN}{r["city"]}\n{CYAN}[{RED}*{CYAN}] Zip:{GREEN} {r["zip"]}\n{CYAN}[{RED}*{CYAN}] Latinude: {GREEN}{r["lat"]}\n{CYAN}[{RED}*{CYAN}] Longitude: {GREEN}{r["lon"]}\n{CYAN}[{RED}*{CYAN}] Timezone: {GREEN}{r["timezone"]}\n{CYAN}[{RED}*{CYAN}] ISP:{CYAN} {r["isp"]}\n{CYAN}[{RED}*{CYAN}] Org:{GREEN} {r["org"]}\n{CYAN}[{RED}*{CYAN}] As: {GREEN}{r["as"]} ')
 		except:
-			print(f'{CYAN}[{RED}-{CYAN}] Не найдено')
+			print(f'{CYAN}[{RED}-{CYAN}] Не найдено (:')
 	elif shell == '3':
 		res1 = requests.get('https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=1000&country=all&anonymity=elite&ssl=yes')
 		print(f'{CYAN}[{RED}^_^{CYAN}] \nВаши прокси мисье:\n' + '\n'.join(res1.text.split('\r\n')))
