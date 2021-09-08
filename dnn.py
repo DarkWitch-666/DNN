@@ -37,7 +37,7 @@ print(f'''{BOLD}\033[35m
 {GREEN}4{CYAN} - Тех поддержка
 {GREEN}0{CYAN} - очистить терминал
 
-{RED}[Автор: t.me/DarkWitch_666]\n[DNN-V1] (выход: ctrl + z)
+{RED}[Автор: t.me/DarkWitcher_666]\n[DNN-V1] (выход: ctrl + z)
 ''')
 
 while True:
